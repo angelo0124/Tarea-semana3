@@ -1,0 +1,22 @@
+Pruebas de rutas del servidor - server.js
+==========================================
+
+Ruta 1: http://localhost:3000
+------------------------------
+Al acceder a esta ruta raíz con el método GET, el servidor responde con el
+texto "Servidor activo". Confirma que el servidor está en funcionamiento
+y escuchando correctamente en el puerto 3000.
+
+Ruta 2: http://localhost:3000/saludo
+--------------------------------------
+Al acceder a esta ruta con el método GET, el servidor responde con el
+texto "Hola comunidad". Es una ruta estática que siempre devuelve el
+mismo mensaje de saludo para todos los usuarios.
+
+Ruta 3: http://localhost:3000/mensaje/juan
+-------------------------------------------
+Al acceder a esta ruta con el método GET, el servidor lee el parámetro
+dinámico "nombre" de la URL (en este caso "juan") y responde con el
+texto personalizado "Hola juan". Si se cambia el nombre en la URL,
+el servidor responde con ese nuevo nombre. Por ejemplo, con
+/mensaje/maria respondería "Hola maria".
